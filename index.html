@@ -5,35 +5,66 @@
 <meta name="theme-color" content="#08090c">
 <title>FIVEGUARD SCANNER PRO</title>
 <style>
-:root{--bg:#08090c;--panel:#111319;--line:#252832;--red:#e32636;--muted:#9ba1ad;--white:#f4f5f7}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 0,#2a0b12 0,transparent 32%),var(--bg);color:var(--white);font:15px/1.6 Inter,Segoe UI,Arial,sans-serif}
-a{color:inherit;text-decoration:none}.wrap{max-width:1160px;margin:auto;padding:0 24px}
-header{height:76px;border-bottom:1px solid #ffffff12;display:flex;align-items:center;position:sticky;top:0;background:#08090cef;backdrop-filter:blur(12px);z-index:3}
-nav{display:flex;align-items:center;justify-content:space-between;width:100%}.brand{font-weight:900;letter-spacing:1.5px}.brand b{color:var(--red)}.links{display:flex;gap:26px;color:#c2c5cc;font-size:14px}
-.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:8px;background:var(--red);font-weight:800;border:1px solid var(--red);color:white;cursor:pointer}.btn.ghost{background:transparent;border-color:#3a3e49}.hero{padding:105px 0 85px;display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center}
-.tag{color:#ff6976;font-weight:800;letter-spacing:2px;font-size:12px}.hero h1{font-size:clamp(42px,6vw,70px);line-height:1.04;margin:16px 0}.hero h1 span{color:var(--red)}.lead{font-size:18px;color:#aeb3bd;max-width:620px}.actions{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}
-.visual{background:linear-gradient(145deg,#1a1c24,#0e1015);border:1px solid #343743;border-radius:18px;padding:24px;box-shadow:0 25px 80px #0009}.window{display:flex;gap:7px;margin-bottom:22px}.dot{width:9px;height:9px;border-radius:50%;background:#4a4d58}.status{display:flex;justify-content:space-between;color:#aeb3bd;font-size:13px}.meter{height:8px;background:#292d37;border-radius:10px;margin:12px 0 22px;overflow:hidden}.meter i{display:block;width:72%;height:100%;background:var(--red)}.finding{padding:13px 14px;background:#171a22;border:1px solid #292d37;border-radius:9px;margin-top:10px;display:flex;justify-content:space-between}.finding strong{font-size:13px}.finding small{color:var(--muted)}
-section{padding:72px 0;border-top:1px solid #ffffff10}.section-title{font-size:32px;margin:0 0 10px}.sub{color:var(--muted);margin:0 0 30px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{padding:24px;border:1px solid var(--line);background:var(--panel);border-radius:13px}.card h3{margin:0 0 8px}.card p{margin:0;color:var(--muted)}.price{font-size:34px;font-weight:900;margin:15px 0}.price small{font-size:13px;color:var(--muted);font-weight:400}.list{padding-left:18px;color:#c5c8cf}.notice{padding:16px;border:1px solid #55303a;background:#1c1116;border-radius:10px;color:#d8b9bf}
-footer{padding:35px 0;color:var(--muted);border-top:1px solid #ffffff10;font-size:13px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-@media(max-width:800px){.hero{grid-template-columns:1fr;padding:70px 0}.links{display:none}.grid{grid-template-columns:1fr}.visual{max-width:600px}}
+:root{color-scheme:dark;--bg:#08090c;--panel:#11141b;--line:#292e39;--red:#e32636;--muted:#a4aab5;--white:#f4f5f7}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 78% 0,#351019 0,transparent 38%),var(--bg);color:var(--white);font:15px/1.6 Inter,Segoe UI,Arial,sans-serif}a{color:inherit;text-decoration:none}.wrap{max-width:1120px;margin:auto;padding:0 24px}
+header{height:74px;border-bottom:1px solid #ffffff12;background:#08090cef;position:sticky;top:0;z-index:4;backdrop-filter:blur(12px)}nav{height:100%;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:900;letter-spacing:1px}.brand b,.accent{color:var(--red)}.btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--red);background:var(--red);color:#fff;border-radius:9px;padding:11px 18px;font-weight:800;cursor:pointer;font-size:14px}.btn.ghost{background:transparent;border-color:#414653}.btn:disabled{opacity:.55;cursor:wait}
+.hero{padding:94px 0 76px;display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}.tag{color:#ff7782;letter-spacing:2px;font-size:12px;font-weight:800}.hero h1{font-size:clamp(42px,6vw,68px);line-height:1.05;margin:16px 0}.lead{color:#b4bac4;font-size:18px;max-width:610px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.panel{border:1px solid #343a47;border-radius:17px;background:linear-gradient(145deg,#191d26,#0e1016);padding:24px;box-shadow:0 24px 75px #0009}.panel-top{display:flex;justify-content:space-between;color:#b7bdc7;font-size:12px}.pill{color:#ff8791;border:1px solid #71303a;padding:3px 9px;border-radius:20px}.scanrow{display:flex;justify-content:space-between;padding:13px;margin-top:10px;background:#171b23;border:1px solid #2b303b;border-radius:9px}.muted{color:var(--muted)}section{padding:62px 0;border-top:1px solid #ffffff10}.section-title{font-size:30px;margin:0 0 8px}.sub{color:var(--muted);margin:0 0 26px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.card{padding:22px;border:1px solid var(--line);background:var(--panel);border-radius:12px}.card h3{margin:0 0 8px}.card p{margin:0;color:var(--muted)}
+#account{display:none}.profile{display:flex;align-items:center;gap:16px}.avatar{width:62px;height:62px;border-radius:50%;background:#292e39;object-fit:cover}.account-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.notice{margin-top:18px;padding:13px 15px;border:1px solid #63313a;background:#1c1116;border-radius:9px;color:#e4c3c8;font-size:13px}.error{color:#ff929b;margin-top:12px;min-height:24px}
+footer{padding:30px 0;color:var(--muted);border-top:1px solid #ffffff10;font-size:13px}
+@media(max-width:780px){.hero{grid-template-columns:1fr;padding:65px 0}.grid{grid-template-columns:1fr}}
 </style></head>
 <body>
-<header><div class="wrap"><nav><a class="brand" href="#">FIVE<b>GUARD</b> <span style="color:#777;font-size:11px">SCANNER PRO</span></a><div class="links"><a href="#ozellikler">Özellikler</a><a href="#nasil">Nasıl çalışır?</a><a href="#planlar">Planlar</a><a href="#sss">SSS</a></div><a class="btn" href="/auth/discord">Discord ile giriş</a></nav></div></header>
-<main>
-<div class="wrap hero"><div><div class="tag">FIVEM GÜVENLİK KONTROLÜ</div><h1>Sunucunu koru.<br><span>Kontrol sende.</span></h1><p class="lead">FIVEGUARD SCANNER PRO, FiveM sunucuları için şüpheli dosya ve yapılandırma göstergelerini incelemeye yönelik güvenlik panelidir.</p><div class="actions"><a class="btn" href="/auth/discord">Discord ile giriş yap</a><a class="btn ghost" href="#ozellikler">Özellikleri keşfet</a></div></div>
-<div class="visual"><div class="window"><i class="dot"></i><i class="dot"></i><i class="dot"></i></div><div class="status"><b>GÜVENLİK PANELİ</b><span style="color:#ff6976">● DEMO ARAYÜZ</span></div><h2 style="font-size:25px;margin:18px 0 0">Tarama özeti</h2><div class="status"><span>Kontrol örneği</span><b>72%</b></div><div class="meter"><i></i></div><div class="finding"><div><strong>Dosya bütünlüğü</strong><br><small>Kontrol listesi</small></div><b style="color:#77d69a">Hazır</b></div><div class="finding"><div><strong>Yapılandırma incelemesi</strong><br><small>Şüpheli göstergeler</small></div><b style="color:#f0bd62">İncele</b></div><div class="finding"><div><strong>Raporlama</strong><br><small>Denetim kaydı</small></div><b style="color:#aeb3bd">Demo</b></div></div></div>
-<section id="ozellikler"><div class="wrap"><h2 class="section-title">Güvenlik için tasarlandı</h2><p class="sub">Anlaşılır bulgular, kontrollü tarama ve şeffaf raporlama.</p><div class="grid">
-<div class="card"><h3>Dosya göstergeleri</h3><p>Yetkili olduğun sunucu ortamındaki seçili dosyaları bilinen risk göstergeleri açısından incelemek için tasarlanır.</p></div>
-<div class="card"><h3>Raporlama</h3><p>Bulguları önem derecesi ve açıklamasıyla düzenle; sonuçları insan incelemesine sun.</p></div>
-<div class="card"><h3>Hesap paneli</h3><p>Discord hesabınla oturum açma ve üyelik durumunu tek panelden görüntüleme altyapısı.</p></div>
-</div></div></section>
-<section id="nasil"><div class="wrap"><h2 class="section-title">Nasıl çalışır?</h2><p class="sub">Kontrol süreci kullanıcı izni ve sunucu yöneticisinin yetkisiyle yürütülmelidir.</p><div class="grid">
-<div class="card"><h3>01 · Giriş yap</h3><p>Discord üzerinden kimliğini doğrula.</p></div><div class="card"><h3>02 · Kapsamı seç</h3><p>Yalnızca erişim iznin olan sunucu ve dosyaları seç.</p></div><div class="card"><h3>03 · Raporu incele</h3><p>Şüpheli işaretleri tek başına kesin kanıt sayma; karar öncesi doğrula.</p></div></div></div></section>
-<section id="planlar"><div class="wrap"><h2 class="section-title">Üyelik planları</h2><p class="sub">Planlar şu an tanıtım amaçlıdır; ödeme sistemi henüz etkin değildir.</p><div class="grid">
-<div class="card"><h3>FREE</h3><div class="price">₺0 <small>/ başlangıç</small></div><ul class="list"><li>Temel panel görünümü</li><li>Örnek rapor ekranı</li><li>Topluluk desteği</li></ul><a class="btn ghost" href="/auth/discord">Başla</a></div>
-<div class="card" style="border-color:#8c2632"><h3>PRO</h3><div class="price">Yakında</div><ul class="list"><li>Gelişmiş tarama araçları</li><li>Detaylı raporlar</li><li>Öncelikli destek</li></ul><a class="btn" href="/auth/discord">İlgi göster</a></div>
-<div class="card"><h3>LEADERS</h3><div class="price">Özel</div><ul class="list"><li>Yönetim paneli</li><li>Rol ve izin yönetimi</li><li>Denetim kayıtları</li></ul><a class="btn ghost" href="/auth/discord">İletişime geç</a></div>
-</div></div></section>
-<section id="sss"><div class="wrap"><h2 class="section-title">Sık sorulan sorular</h2><div class="grid"><div class="card"><h3>Bu site şu an canlı tarama yapıyor mu?</h3><p>Hayır. Bu sürüm çalışan Discord giriş örneği ve tanıtım arayüzü içerir; tarayıcı motoru henüz eklenmemiştir.</p></div><div class="card"><h3>Discord şifrem istenir mi?</h3><p>Hayır. Giriş Discord OAuth2 üzerinden yapılır; FIVEGUARD şifreni görmez.</p></div><div class="card"><h3>Tarama sonucu otomatik ban atar mı?</h3><p>Hayır. Bulgular insan tarafından incelenmelidir; tek bir sinyalle otomatik ceza verilmemelidir.</p></div></div><p class="notice" style="margin-top:20px">Not: Bu sürüm tanıtım ve yerel test içindir. Herkese açık kullanım için güvenli sunucu ayarları, veritabanı ve gizlilik metinlerinin gözden geçirilmesi gerekir.</p></div></section>
-</main><footer class="wrap"><span>© 2026 FIVEGUARD SCANNER PRO</span><span>Güvenli · Şeffaf · Yetkili kullanım</span></footer>
-</body></html>
+<header><div class="wrap"><nav><a class="brand" href="#">FIVE<span class="accent">GUARD</span> <small class="muted">SCANNER PRO</small></a><button class="btn" id="navLogin">Discord ile giriş</button></nav></div></header>
+<main class="wrap">
+<div class="hero" id="home">
+<div><div class="tag">FIVEM GÜVENLİK PANELİ</div><h1>Sunucunu koru.<br><span class="accent">Kontrol sende.</span></h1><p class="lead">FIVEGUARD, FiveM sunucuları için güvenlik inceleme ve raporlama panelidir. İlk aşamada Discord hesabınla güvenli oturum açma özelliğini hazırlıyoruz.</p><div class="actions"><button class="btn" id="heroLogin">Discord ile giriş yap</button><a class="btn ghost" href="#features">Özellikleri gör</a></div><div class="error" id="error"></div></div>
+<div class="panel"><div class="panel-top"><b>FIVEGUARD / OVERVIEW</b><span class="pill">PANEL ÖNİZLEMESİ</span></div><h2>Güvenlik merkezi</h2><p class="muted">Hesap girişi tamamlandıktan sonra kullanıcı paneli burada açılır.</p><div class="scanrow"><span>Discord hesap bağlantısı</span><b class="accent">OAuth2</b></div><div class="scanrow"><span>Kullanıcı oturumu</span><b>Hazırlandı</b></div><div class="scanrow"><span>Tarama motoru</span><b class="muted">Sonraki aşama</b></div></div>
+</div>
+<section id="account"><h2 class="section-title">Hesap panelin</h2><p class="sub">Discord hesabınla oturum açtın.</p><div class="card"><div class="profile"><img class="avatar" id="avatar" alt="Discord profil fotoğrafı"><div><h2 id="displayName" style="margin:0"></h2><div class="muted" id="userTag"></div><small class="muted" id="userId"></small></div></div><div class="account-actions"><button class="btn ghost" id="logout">Oturumu kapat</button></div></div></section>
+<section id="features"><h2 class="section-title">Panel özellikleri</h2><p class="sub">İlk sürümde hesap girişi; tarama sistemi sonraki geliştirme aşamasında.</p><div class="grid"><div class="card"><h3>Discord hesabı</h3><p>Discord'un resmi yetkilendirme ekranıyla giriş.</p></div><div class="card"><h3>Kullanıcı paneli</h3><p>Profil fotoğrafı, görünen ad ve hesap bilgileri.</p></div><div class="card"><h3>Güvenlik raporları</h3><p>Tarama motoru henüz etkin değil; bu alan daha sonra eklenecek.</p></div></div><div class="notice">FIVEGUARD Discord şifreni istemez. Giriş Discord'un kendi sayfasında yapılır. Bu demo oturumu yalnızca açık tarayıcı sekmesinde saklar.</div></section>
+</main><footer><div class="wrap">© 2026 FIVEGUARD SCANNER PRO</div></footer>
+<script>
+const CLIENT_ID = "DISCORD_CLIENT_ID_BURAYA";
+const REDIRECT_URI = "https://lazzamissi.github.io/fiveguard/";
+const API = "https://discord.com/api/v10";
+const $ = (id) => document.getElementById(id);
+const b64url = (bytes) => btoa(String.fromCharCode(...new Uint8Array(bytes))).replace(/\+/g,"-").replace(/\//g,"_").replace(/=+$/,"");
+function randomString(n=64){const a=new Uint8Array(n);crypto.getRandomValues(a);return b64url(a)}
+async function challenge(v){return b64url(await crypto.subtle.digest("SHA-256",new TextEncoder().encode(v)))}
+function showError(t){$("error").textContent=t}
+async function login(){
+ if(CLIENT_ID==="DISCORD_CLIENT_ID_BURAYA"){showError("Discord uygulama Client ID bilgisi henüz projeye eklenmedi.");return}
+ const verifier=randomString(64), state=randomString(24), ch=await challenge(verifier);
+ sessionStorage.setItem("fg_verifier",verifier);sessionStorage.setItem("fg_state",state);
+ const q=new URLSearchParams({client_id:CLIENT_ID,redirect_uri:REDIRECT_URI,response_type:"code",scope:"identify",state,code_challenge:ch,code_challenge_method:"S256"});
+ location.href="https://discord.com/oauth2/authorize?"+q.toString();
+}
+async function loadAccount(){
+ const p=new URLSearchParams(location.search), code=p.get("code"), returnedState=p.get("state");
+ if(code){
+  const expected=sessionStorage.getItem("fg_state"),verifier=sessionStorage.getItem("fg_verifier");
+  if(!expected||returnedState!==expected||!verifier){showError("Giriş doğrulanamadı. Lütfen tekrar deneyin.");history.replaceState({}, "", REDIRECT_URI);return}
+  try{
+   const body=new URLSearchParams({client_id:CLIENT_ID,grant_type:"authorization_code",code,redirect_uri:REDIRECT_URI,code_verifier:verifier});
+   const tr=await fetch(API+"/oauth2/token",{method:"POST",headers:{"Content-Type":"application/x-www-form-urlencoded"},body});
+   const token=await tr.json();if(!tr.ok||!token.access_token)throw new Error(token.error_description||token.error||"Token alınamadı");
+   const ur=await fetch(API+"/users/@me",{headers:{Authorization:"Bearer "+token.access_token}});
+   const user=await ur.json();if(!ur.ok)throw new Error("Discord profil bilgisi alınamadı");
+   sessionStorage.setItem("fg_user",JSON.stringify(user));sessionStorage.setItem("fg_access",token.access_token);
+  }catch(e){showError("Discord girişi tamamlanamadı: "+e.message)}
+  sessionStorage.removeItem("fg_verifier");sessionStorage.removeItem("fg_state");history.replaceState({}, "", REDIRECT_URI);
+ }
+ const raw=sessionStorage.getItem("fg_user");if(!raw)return;
+ try{
+  const u=JSON.parse(raw), name=u.global_name||u.username||"Discord kullanıcısı";
+  $("displayName").textContent=name;$("userTag").textContent="@"+u.username;$("userId").textContent="Discord ID: "+u.id;
+  if(u.avatar)$("avatar").src="https://cdn.discordapp.com/avatars/"+u.id+"/"+u.avatar+".png?size=128";
+  else $("avatar").src="https://cdn.discordapp.com/embed/avatars/0.png";
+  $("account").style.display="block";$("home").style.display="none";$("navLogin").textContent="Hesabım";$("navLogin").onclick=()=>$("account").scrollIntoView({behavior:"smooth"});
+ }catch{sessionStorage.clear()}
+}
+function logout(){sessionStorage.removeItem("fg_user");sessionStorage.removeItem("fg_access");location.href=REDIRECT_URI}
+$("navLogin").addEventListener("click",login);$("heroLogin").addEventListener("click",login);$("logout").addEventListener("click",logout);
+loadAccount();
+</script></body></html>
